@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: hsl(48, 18%, 83%);
+}
+
+.examples {
+  padding: 3rem;
+  max-width: 1200px;
+  display: flex;
+  gap: clamp(2rem, 8vw, 4rem);
+}
+
+button {
+  background: transparent;
+  border: 10px solid var(--button-color, #000);
+  border-radius: 1rem;
+}
+
+/* button one */
+.button-one {
+  --button-color: #333;
+}
